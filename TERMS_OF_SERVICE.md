@@ -30,43 +30,33 @@ Vulcan is a mobile application designed for tracking custom motorcycle build pro
 
 ## User Accounts and Subscriptions
 
-### Free Trial
+### Free Plan
 
-**14-Day Trial Period**
-- Automatically starts on first app launch
-- Full access to all features during trial
-- No credit card required to start trial
-- Trial timer starts from first app open
-- After 14 days, converts to read-only mode unless you subscribe
-
-**Read-Only Mode (After Trial)**
-- View existing builds, photos, and data
-- Cannot create new builds
-- Cannot edit existing content
-- Cannot use voice input
-- Cannot add photos, parts, or labour costs
+**One Build, Free Forever**
+- No credit card required, no trial period, nothing expires
+- Full editing access to one active build for as long as you want it
+- Includes stages, tasks and due dates, photos and timeline, parts/labour/budget
+  tracking, documents, and browsing the builder directory
+- Does not include invoices, customer sharing, or voice input — see Solo
+  Builder and Pro Shop below
+- Deleting your one build frees up the slot to start another; we do not
+  place any additional restriction on this
 
 ### Subscription Tiers
 
 **Solo Builder - $14.99/month or $149/year**
-- 1 active build at a time
-- Full access to all core features:
-  - Build creation and editing
-  - Photo timeline with camera integration
+- Up to 3 active builds at a time
+- Everything in the Free plan, plus:
+  - Invoice generation and sharing
+  - Customer sharing (share build progress with your customer)
   - Voice-to-text input for tasks, parts, and labour
-  - Cost tracking (parts and labour)
-  - Task management
-  - Document management
-  - Customer information storage
-  - Build progress tracking
 
 **Pro Shop - $39.99/month or $399/year**
 - **Unlimited builds**
 - All Solo Builder features plus:
-  - Customer portal preview links
-  - Invoice generation
+  - Builder directory showcase (appear in "Find a Builder") — **not yet
+    available; will be enabled in a future update**
   - Priority support
-  - Builder directory profile (future feature)
 
 **Annual Savings:** Save 17% with yearly billing on any plan.
 
@@ -92,7 +82,9 @@ You can manage and cancel subscriptions at any time through:
 - Cancel anytime - no cancellation fees
 - Must cancel at least 24 hours before renewal to avoid being charged
 - Access continues until end of current billing period
-- After cancellation, you'll have read-only access on the free tier
+- After cancellation, you keep full editing access to one build under the
+  Free plan; if you have more than one active build, you will need to reduce
+  to one before Free-plan limits can apply again
 
 **Changes to Subscription Prices**
 - We may change subscription prices with 30 days advance notice
@@ -195,7 +187,7 @@ Since subscriptions are processed through the Apple App Store:
 **By using the App, you grant us a limited license to:**
 - Store your content locally on your device
 - Process your content to provide App functionality
-- Transmit voice recordings to OpenAI for transcription (immediately deleted)
+- Transmit voice recordings to Groq for transcription (immediately deleted)
 - Display your content within the App interface
 
 **We will NOT:**
@@ -228,7 +220,7 @@ Since subscriptions are processed through the Apple App Store:
 When you use the voice input feature:
 1. You hold the microphone button and speak
 2. Audio is recorded on your device
-3. Audio is sent to **OpenAI's Whisper API** for transcription
+3. Audio is sent to **Groq's Whisper API** for transcription
 4. Transcribed text is returned to the App
 5. **Audio is immediately deleted** - not stored on our servers or your device
 
@@ -244,14 +236,14 @@ When you use the voice input feature:
 - Other languages may work but with reduced accuracy
 
 **Data Processing**
-- Voice data processed by OpenAI (US-based servers)
-- Subject to OpenAI's terms and privacy policy
+- Voice data processed by Groq (US-based servers)
+- Subject to Groq's terms and privacy policy
 - See Privacy Policy for full details
 
 **You Agree To:**
 - Review transcribed text before saving
 - Not rely solely on voice input for critical data
-- Understand that voice data is sent to third-party (OpenAI)
+- Understand that voice data is sent to third-party (Groq)
 
 ---
 
@@ -311,11 +303,11 @@ Your use of the App is also governed by our **Privacy Policy**.
 - Build data stored **locally on your device only**
 - We do **NOT** back up your data to cloud servers
 - You are **responsible for backing up your device**
-- Voice recordings sent to OpenAI, immediately deleted
+- Voice recordings sent to Groq, immediately deleted
 - Subscription data managed by RevenueCat and Apple
 
 **For full details, see our Privacy Policy at:**
-[https://YOUR-PRIVACY-POLICY-URL] (add your GitHub Pages URL here)
+https://omniacollective.github.io/vulcan-legal/PRIVACY_POLICY
 
 ---
 
@@ -407,10 +399,10 @@ You agree to **indemnify, defend, and hold harmless** Paul Vosloo, Built by Omni
 
 The App integrates with third-party services:
 
-### OpenAI (Whisper API)
+### Groq (Whisper API)
 - **Purpose:** Voice-to-text transcription
-- **Terms:** https://openai.com/terms
-- **Privacy:** https://openai.com/privacy
+- **Terms:** https://groq.com/terms-of-sale/
+- **Privacy:** https://groq.com/privacy-policy/
 
 ### RevenueCat
 - **Purpose:** Subscription and payment management
@@ -603,11 +595,10 @@ We aim to respond within **3-5 business days**.
 - Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period
 - Your account will be charged for renewal within 24 hours prior to the end of the current period
 - You can manage subscriptions and turn off auto-renewal in Account Settings after purchase
-- Any unused portion of a free trial period will be forfeited when you purchase a subscription
 
 **Support and Privacy Links:**
-- Privacy Policy: [YOUR-GITHUB-URL/privacy]
-- Terms of Service: [YOUR-GITHUB-URL/terms]
+- Privacy Policy: https://omniacollective.github.io/vulcan-legal/PRIVACY_POLICY
+- Terms of Service: https://omniacollective.github.io/vulcan-legal/TERMS_OF_SERVICE
 - Support: paul@builtbyomnia.com
 
 ---
@@ -620,12 +611,12 @@ We aim to respond within **3-5 business days**.
 
 ## Summary (TL;DR)
 
-**Free Trial:**
-- 14 days full access, then read-only
+**Free Plan:**
+- One build, free forever, no card, no trial, nothing expires
 
 **Subscriptions:**
-- Solo Builder: $14.99/mo or $149/yr (1 build)
-- Pro Shop: $39.99/mo or $399/yr (unlimited builds)
+- Solo Builder: $14.99/mo or $149/yr (up to 3 builds, invoices, customer sharing, voice input)
+- Pro Shop: $39.99/mo or $399/yr (unlimited builds, everything in Solo, priority support)
 - Cancel anytime, auto-renews
 
 **Refunds:**

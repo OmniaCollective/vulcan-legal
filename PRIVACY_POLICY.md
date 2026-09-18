@@ -36,7 +36,7 @@ By using Vulcan, you agree to the collection and use of information in accordanc
 
 **Voice Recordings** (Temporary - Not Stored)
 - Audio recordings when you use voice input features
-- These are sent to OpenAI's Whisper API for transcription only
+- These are sent to Groq's Whisper API for transcription only
 - Audio files are **immediately deleted** after transcription completes
 - We do **NOT** store voice recordings on our servers or your device
 
@@ -61,7 +61,7 @@ By using Vulcan, you agree to the collection and use of information in accordanc
 - Performance metrics
 
 **Subscription Information**
-- Subscription tier (Free Trial/Solo Builder/Pro Shop)
+- Subscription tier (Free/Solo Builder/Pro Shop)
 - Purchase history through Apple App Store
 - Subscription status and renewal dates
 - Managed through RevenueCat (see Third-Party Services below)
@@ -74,7 +74,7 @@ We use the collected information for:
 
 ### 1. App Functionality
 - Store and display your build data locally on your device
-- Process voice input through OpenAI's Whisper API for transcription
+- Process voice input through Groq's Whisper API for transcription
 - Manage your subscription status through RevenueCat
 - Generate customer portal preview links
 - Calculate cost totals and summaries
@@ -112,7 +112,7 @@ We use the collected information for:
 - No server-side storage of your build data, photos, or customer information
 
 ### Third-Party Security
-- **OpenAI:** Voice recordings transmitted over encrypted HTTPS connections, immediately deleted after transcription
+- **Groq:** Voice recordings transmitted over encrypted HTTPS connections, immediately deleted after transcription
 - **RevenueCat:** Payment and subscription data encrypted and PCI-DSS compliant
 
 ---
@@ -121,11 +121,11 @@ We use the collected information for:
 
 We use the following third-party services that may collect and process data:
 
-### 1. OpenAI (Whisper API)
+### 1. Groq (Whisper API)
 - **Purpose:** Voice-to-text transcription
 - **Data Shared:** Temporary audio recordings when you use voice input
-- **Privacy Policy:** https://openai.com/privacy
-- **Data Retention:** Audio files are immediately deleted after transcription - OpenAI does not store them
+- **Privacy Policy:** https://groq.com/privacy-policy/
+- **Data Retention:** Audio files are immediately deleted after transcription - Groq does not store them
 - **How to Opt-Out:** Don't use the voice input feature (you can still manually type)
 
 ### 2. RevenueCat
@@ -153,7 +153,7 @@ We share data only in these limited circumstances:
 When you explicitly authorize us to share specific information.
 
 ### 2. Service Providers
-- **OpenAI:** Only for voice transcription (audio immediately deleted)
+- **Groq:** Only for voice transcription (audio immediately deleted)
 - **RevenueCat:** Only for subscription management
 - **Apple:** Only for app functionality and analytics (anonymous)
 
@@ -197,7 +197,7 @@ You can delete your data at any time:
 - **Subscription Data:** Required for subscription features to work
 
 ### Data Portability
-- Contact **[YOUR_SUPPORT_EMAIL]** to request a copy of your data
+- Contact **paul@builtbyomnia.com** to request a copy of your data
 - We'll provide your data in JSON format within 30 days
 - You can then import this data elsewhere
 
@@ -219,7 +219,7 @@ Vulcan is available worldwide via the Apple App Store.
 
 ### Data Processing
 - **Build data:** Processed and stored locally on your device (wherever you are)
-- **Voice transcription:** Processed by OpenAI's servers (primarily US-based)
+- **Voice transcription:** Processed by Groq's servers (US-based)
 - **Subscription data:** Processed by RevenueCat (US-based) and Apple (worldwide)
 
 ### European Users (GDPR)
@@ -365,7 +365,7 @@ This Privacy Policy is governed by the laws of **South Africa** (update this if 
 
 **What we collect:**
 - ✓ Build data, photos, tasks (stored **locally on your device only**)
-- ✓ Voice recordings (sent to OpenAI, **immediately deleted**, not stored)
+- ✓ Voice recordings (sent to Groq, **immediately deleted**, not stored)
 - ✓ Subscription info (managed by RevenueCat and Apple)
 - ✓ Anonymous usage data (crashes, feature usage)
 
