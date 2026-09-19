@@ -1,6 +1,6 @@
 # Terms of Service for Vulcan
 
-**Last Updated:** January 4, 2026
+**Last Updated:** September 19, 2026
 **Effective Date:** January 4, 2026
 
 ---
@@ -36,11 +36,13 @@ Vulcan is a mobile application designed for tracking custom motorcycle build pro
 - No credit card required, no trial period, nothing expires
 - Full editing access to one active build for as long as you want it
 - Includes stages, tasks and due dates, photos and timeline, parts/labour/budget
-  tracking, documents, and browsing the builder directory
+  tracking, and documents
 - Does not include invoices, customer sharing, or voice input — see Solo
   Builder and Pro Shop below
 - Deleting your one build frees up the slot to start another; we do not
   place any additional restriction on this
+- Browsing the builder directory ("Find a Builder") requires creating a
+  free account (see **Accounts** below) but no paid subscription
 
 ### Subscription Tiers
 
@@ -48,15 +50,27 @@ Vulcan is a mobile application designed for tracking custom motorcycle build pro
 - Up to 3 active builds at a time
 - Everything in the Free plan, plus:
   - Invoice generation and sharing
-  - Customer sharing (share build progress with your customer)
+  - Customer sharing (share build progress with your customer via a
+    hosted customer portal link)
   - Voice-to-text input for tasks, parts, and labour
 
 **Pro Shop - $39.99/month or $399/year**
 - **Unlimited builds**
 - All Solo Builder features plus:
-  - Builder directory showcase (appear in "Find a Builder") — **not yet
-    available; will be enabled in a future update**
+  - Publishing your own profile to the builder directory ("Find a
+    Builder"), visible to other Vulcan users
   - Priority support
+
+### Accounts
+
+Tracking your own build never requires an account. Creating an account
+(email and password, or Sign in with Apple) is required to:
+- Browse or publish to the builder directory
+- Subscribe to Solo Builder or Pro Shop and use their features
+
+Account authentication is handled by our backend provider, Supabase —
+see **Third-Party Services** below and our Privacy Policy for details on
+what account data is collected and how it's used.
 
 **Annual Savings:** Save 17% with yearly billing on any plan.
 
@@ -251,22 +265,26 @@ When you use the voice input feature:
 
 ### Portal Feature Explanation
 
-The "customer portal" feature generates a **preview link** that:
-- Shows what a customer-facing portal would look like
-- Displays build progress, photos, and timeline
-- Is generated locally on your device
-- Is **NOT** an actual hosted web portal
-
-**Important Limitations:**
-- Portal links are demonstration/preview only
-- We do not host actual customer portals (no backend)
-- Links are not shareable in production (local only)
-- Future versions may include real hosted portals
+Solo Builder and Pro Shop subscribers can publish a **real, hosted
+web page** for a customer at a link like
+`builtbyomnia.com/vulcan-build/{id}`, which:
+- Requires no app, account, or login for the customer to view
+- Shows a snapshot of build progress, photos, cost total, and
+  deadline — you control which of these are visible via toggles in the
+  app
+- Is a **point-in-time snapshot**, not a live view — the customer sees
+  whatever you last published, until you publish an update
+- Is accessible to **anyone who has the link**; there is currently no
+  password, expiry, or automatic removal, so treat the link like you
+  would any unlisted but unprotected web page
 
 **Your Responsibility:**
-- Understand portal feature is preview/demonstration
-- Not mislead customers about portal functionality
-- Use portal feature for planning/visualization only
+- Only share the link with the customer it's intended for
+- Keep the visibility toggles set appropriately for what you're
+  comfortable sharing (e.g. turn off cost visibility if you don't want
+  the customer to see it)
+- Delete or stop sharing a portal (via the app) once it's no longer
+  needed
 
 ---
 
@@ -274,24 +292,32 @@ The "customer portal" feature generates a **preview link** that:
 
 ### Directory Content
 
-The builder directory contains:
-- **Mock/demonstration data** for educational purposes
-- Sample builder profiles to show what's possible
-- Example contact information (not real)
-- Future versions may include real builder submissions
+The builder directory ("Find a Builder") contains two kinds of listings:
+- **Curated profiles** we've added ourselves from publicly available
+  builder websites/social media, credited to the real builder
+- **Self-published profiles** from Pro Shop subscribers, who submit and
+  control their own name, bio, photos, location, and contact details
+
+Browsing the directory requires a free account (see **Accounts** above).
+Publishing your own listing requires a Pro Shop subscription.
 
 **We Are NOT Responsible For:**
-- Accuracy of builder information (currently mock data)
+- Accuracy of builder information, whether curated or self-published
 - Quality of builders' work or services
 - Disputes between users and builders
 - Transactions or agreements made through the directory
 - Fraud or misrepresentation by builders
 
 **Using the Directory:**
-- Understand data is for demonstration purposes
-- Verify all builder information independently
-- Exercise caution in any business relationships
-- Do not rely on directory data for critical decisions
+- Verify all builder information independently before relying on it
+- Exercise caution in any business relationships formed through it
+- If you find a curated listing that's inaccurate or that you'd like
+  removed, contact **paul@builtbyomnia.com**
+
+**If You Publish Your Own Listing (Pro Shop):**
+- You're responsible for the accuracy of everything you submit
+- Your listing is publicly visible to anyone with a Vulcan account
+- You can unpublish it at any time from within the app
 
 ---
 
@@ -300,11 +326,15 @@ The builder directory contains:
 Your use of the App is also governed by our **Privacy Policy**.
 
 **Key Privacy Points:**
-- Build data stored **locally on your device only**
-- We do **NOT** back up your data to cloud servers
+- Build data stored **locally on your device only**, unless you
+  explicitly publish it (a customer portal, or a builder directory
+  listing) — see below
 - You are **responsible for backing up your device**
 - Voice recordings sent to Groq, immediately deleted
 - Subscription data managed by RevenueCat and Apple
+- Account data (email or Apple ID identifier), published customer
+  portal snapshots, and published builder profiles are stored on our
+  backend provider, Supabase
 
 **For full details, see our Privacy Policy at:**
 https://omniacollective.github.io/vulcan-legal/PRIVACY_POLICY
@@ -408,6 +438,12 @@ The App integrates with third-party services:
 - **Purpose:** Subscription and payment management
 - **Terms:** https://www.revenuecat.com/terms
 - **Privacy:** https://www.revenuecat.com/privacy
+
+### Supabase
+- **Purpose:** Account authentication, and hosting for published
+  customer portals and builder directory listings
+- **Terms:** https://supabase.com/terms
+- **Privacy:** https://supabase.com/privacy
 
 ### Apple App Store
 - **Purpose:** App distribution and in-app purchases
@@ -603,9 +639,9 @@ We aim to respond within **3-5 business days**.
 
 ---
 
-**Vulcan Terms of Service v1.0**
+**Vulcan Terms of Service v1.1**
 **Effective Date:** January 4, 2026
-**Last Updated:** January 4, 2026
+**Last Updated:** September 19, 2026
 
 ---
 
