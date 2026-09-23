@@ -1,6 +1,6 @@
 # Privacy Policy for Vulcan
 
-**Last Updated:** September 19, 2026
+**Last Updated:** September 23, 2026
 **Effective Date:** January 4, 2026
 
 ---
@@ -411,11 +411,6 @@ Email: **paul@builtbyomnia.com**
 **General Support:**
 Email: **paul@builtbyomnia.com**
 
-**Mailing Address (Optional - add if you want):**
-Paul Vosloo
-Built by Omnia
-[Your City, Country]
-
 We'll respond to privacy inquiries within **30 days**.
 
 ---
@@ -426,13 +421,13 @@ We'll respond to privacy inquiries within **30 days**.
 **App Name:** Vulcan
 **Platform:** iOS (App Store)
 
-This Privacy Policy is governed by the laws of **South Africa** (update this if you're in a different jurisdiction).
+This Privacy Policy is governed by the laws of **England and Wales**.
 
 ---
 
-**Vulcan Privacy Policy v1.1**
+**Vulcan Privacy Policy v1.2**
 **Effective Date:** January 4, 2026
-**Last Updated:** September 19, 2026
+**Last Updated:** September 23, 2026
 
 ---
 

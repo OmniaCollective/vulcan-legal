@@ -1,6 +1,6 @@
 # Terms of Service for Vulcan
 
-**Last Updated:** September 19, 2026
+**Last Updated:** September 23, 2026
 **Effective Date:** January 4, 2026
 
 ---
@@ -526,7 +526,7 @@ When we make changes:
 
 ### Governing Law
 
-These Terms are governed by the laws of **South Africa** (update if different), without regard to conflict of law principles.
+These Terms are governed by the laws of **England and Wales**, without regard to conflict of law principles. The courts of England and Wales have exclusive jurisdiction over any dispute that cannot be resolved informally.
 
 ### Informal Resolution First
 
@@ -537,16 +537,6 @@ These Terms are governed by the laws of **South Africa** (update if different), 
 3. Allow us 30 days to attempt informal resolution
 
 We'll work in good faith to resolve disputes amicably.
-
-### Arbitration (If Applicable)
-
-[Add arbitration clause if required in your jurisdiction]
-
-For disputes that cannot be resolved informally:
-- Disputes may be subject to binding arbitration
-- Arbitration conducted in [Your City/Country]
-- Arbitrator's decision is final and binding
-- Each party bears own legal costs unless otherwise awarded
 
 ### Class Action Waiver
 
@@ -612,11 +602,6 @@ For questions about these Terms of Service:
 
 **Email:** paul@builtbyomnia.com
 
-**Mailing Address:**
-Paul Vosloo
-Built by Omnia
-[Your City, Country]
-
 **Support:** paul@builtbyomnia.com
 
 We aim to respond within **3-5 business days**.
@@ -639,9 +624,9 @@ We aim to respond within **3-5 business days**.
 
 ---
 
-**Vulcan Terms of Service v1.1**
+**Vulcan Terms of Service v1.2**
 **Effective Date:** January 4, 2026
-**Last Updated:** September 19, 2026
+**Last Updated:** September 23, 2026
 
 ---
 
