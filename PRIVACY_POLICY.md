@@ -1,6 +1,6 @@
 # Privacy Policy for Vulcan
 
-**Last Updated:** September 23, 2026
+**Last Updated:** October 22, 2026
 **Effective Date:** January 4, 2026
 
 ---
@@ -32,7 +32,7 @@ By using Vulcan, you agree to the collection and use of information in accordanc
   uploaded to our backend provider, Supabase
 
 **Customer Information** (that you enter for your customers)
-- Customer names, phone numbers, email addresses
+- Customer names, phone numbers, email addresses and postal addresses
 - If you publish a customer portal for Solo Builder/Pro Shop's customer
   sharing feature, the customer's name and whichever of your build's
   progress, photos, cost total, and deadline you've chosen to make
@@ -54,16 +54,39 @@ By using Vulcan, you agree to the collection and use of information in accordanc
 
 **Voice Recordings** (Temporary - Not Stored)
 - Audio recordings when you use voice input features
-- These are sent to Groq's Whisper API for transcription only
+- These are sent to Groq's Whisper API for transcription only, passing
+  through our server (on Supabase), which checks your plan and does not
+  keep them
 - Audio files are **immediately deleted** after transcription completes
 - We do **NOT** store voice recordings on our servers or your device
+
+**Receipts**
+- Receipt photos and scans you attach to a cost are stored **only on
+  your device**, with the rest of your build data
+- Receipt text is read **on your device** by Apple's text recognition
+- If you use "fill in from receipt" (Solo Builder and Pro Shop), only
+  that recognised **text** is sent to Groq to pick out the description,
+  supplier, amount and date, passing through our server (on Supabase),
+  which checks your plan and does not keep it. The receipt image is never
+  sent
+- We do **NOT** store receipt text on our servers
+
+**Usage Counts** (Solo Builder and Pro Shop)
+- To prevent abuse, our server keeps a count of how many voice and
+  receipt requests your account makes each day (your account ID, the
+  date and the number). Not what you said or what was on the receipt
 
 **Cost and Financial Data**
 - Parts costs and descriptions
 - Labour hours and rates
+- Suppliers, dates and notes you add to costs
 - Invoice data — invoices you generate stay on your device and in
   whatever app (Mail, Files, etc.) you choose to send or save them
   through; we never see or store them
+- Invoice settings — your business logo, payment details ("How to
+  pay", such as bank details), VAT number and company number are
+  stored only on your device and printed on the invoices you send;
+  they are never sent to us
 - Itemized cost data always stays local. If you publish a customer
   portal with "Cost Total" visibility turned on, only the **total**
   figure (not the itemized breakdown) is uploaded to Supabase
@@ -97,6 +120,8 @@ We use the collected information for:
 ### 1. App Functionality
 - Store and display your build data locally on your device
 - Process voice input through Groq's Whisper API for transcription
+- Read receipt text through Groq to fill in cost details, when you ask
+  it to
 - Manage your subscription status through RevenueCat
 - Authenticate your account through Supabase, for Solo Builder/Pro Shop
   and the builder directory
@@ -142,7 +167,7 @@ We use the collected information for:
   information beyond what you've chosen to publish
 
 ### Third-Party Security
-- **Groq:** Voice recordings transmitted over encrypted HTTPS connections, immediately deleted after transcription
+- **Groq:** Voice recordings and receipt text transmitted over encrypted HTTPS connections; voice recordings immediately deleted after transcription
 - **RevenueCat:** Payment and subscription data encrypted and PCI-DSS compliant
 - **Supabase:** Account, published portal, and published builder profile data encrypted in transit (HTTPS) and at rest
 
@@ -152,16 +177,19 @@ We use the collected information for:
 
 We use the following third-party services that may collect and process data:
 
-### 1. Groq (Whisper API)
-- **Purpose:** Voice-to-text transcription
-- **Data Shared:** Temporary audio recordings when you use voice input
+### 1. Groq
+- **Purpose:** Voice-to-text transcription (Whisper), and reading the
+  details of a receipt
+- **Data Shared:** Temporary audio recordings when you use voice input;
+  the recognised text of a receipt when you use "fill in from receipt"
+  (never the image)
 - **Privacy Policy:** https://groq.com/privacy-policy/
 - **Data Retention:** Audio files are immediately deleted after transcription - Groq does not store them
-- **How to Opt-Out:** Don't use the voice input feature (you can still manually type)
+- **How to Opt-Out:** Don't use voice input or "fill in from receipt" (you can still type, and attach receipts without them being read)
 
 ### 2. RevenueCat
 - **Purpose:** Subscription and in-app purchase management
-- **Data Shared:** Subscription status, purchase history, Apple App Store receipt data, anonymous device identifiers
+- **Data Shared:** Subscription status, purchase history, Apple App Store receipt data, anonymous device identifiers, and your Vulcan account ID when you're signed in (so your plan follows your account)
 - **Privacy Policy:** https://www.revenuecat.com/privacy
 - **Data Retention:** Per RevenueCat's privacy policy
 - **Usage:** Validates your subscription status and manages entitlements
@@ -174,12 +202,14 @@ We use the following third-party services that may collect and process data:
 
 ### 4. Supabase
 - **Purpose:** Account authentication (Solo Builder, Pro Shop, and the
-  builder directory), and hosting for customer portals and builder
-  directory listings you choose to publish
+  builder directory), hosting for customer portals and builder
+  directory listings you choose to publish, and the server that checks
+  your plan before passing voice or receipt text to Groq
 - **Data Shared:** Email address or Apple ID identifier; if you publish
   them, customer portal snapshot data (customer name, and whichever of
   progress/photos/cost total/deadline you've made visible) and/or
-  builder directory profile data
+  builder directory profile data; a daily count of voice and receipt
+  requests per account
 - **Privacy Policy:** https://supabase.com/privacy
 - **Data Retention:** Until you delete the published item or your
   account, or contact us to request deletion
@@ -204,11 +234,12 @@ the main way information leaves your device, and it only happens when
 you take that action.
 
 ### 2. Service Providers
-- **Groq:** Only for voice transcription (audio immediately deleted)
+- **Groq:** Only for voice transcription (audio immediately deleted) and reading receipt text
 - **RevenueCat:** Only for subscription management
 - **Apple:** Only for app functionality and analytics (anonymous)
-- **Supabase:** Account authentication, and hosting whatever you've
-  chosen to publish (customer portals, builder directory listings)
+- **Supabase:** Account authentication, hosting whatever you've
+  chosen to publish (customer portals, builder directory listings), and
+  checking your plan for voice and receipt reading
 
 ### 3. Legal Requirements
 We may disclose information if required by law, court order, or government regulation, or to:
@@ -279,7 +310,7 @@ Vulcan is available worldwide via the Apple App Store.
 
 ### Data Processing
 - **Build data:** Processed and stored locally on your device (wherever you are)
-- **Voice transcription:** Processed by Groq's servers (US-based)
+- **Voice transcription and receipt reading:** Processed by Groq's servers (US-based)
 - **Subscription data:** Processed by RevenueCat (US-based) and Apple (worldwide)
 - **Account, published portal, and published builder profile data:**
   Processed and stored by Supabase, in the data center region selected
@@ -427,7 +458,7 @@ This Privacy Policy is governed by the laws of **England and Wales**.
 
 **Vulcan Privacy Policy v1.2**
 **Effective Date:** January 4, 2026
-**Last Updated:** September 23, 2026
+**Last Updated:** October 22, 2026
 
 ---
 
